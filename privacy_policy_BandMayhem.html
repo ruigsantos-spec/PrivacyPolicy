@@ -2,178 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BandMayhem – Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BandMayhem – Privacy Policy and Account Deletion</title>
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 24px 16px 40px;
-      line-height: 1.6;
-      color: #222;
-      background: #f9fafb;
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { max-width: 900px; margin: 0 auto; padding: 28px 18px 56px; line-height: 1.65; color: #1f2937; background: #f3f4f6; }
+    main { padding: 30px; border-radius: 16px; background: #ffffff; box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08); }
+    h1, h2, h3 { color: #111827; line-height: 1.25; }
+    h1 { margin: 0 0 0.35rem; }
+    h2 { margin-top: 2.2rem; }
+    h3 { margin-top: 1.5rem; }
+    p, li { max-width: 78ch; }
+    li { margin: 0.4rem 0; }
+    a { color: #6d28d9; }
+    nav { margin: 1.25rem 0 1.75rem; }
+    nav a { margin-right: 1rem; font-weight: 700; }
+    .meta { color: #6b7280; margin-top: 0; }
+    .notice { margin: 1.25rem 0; padding: 14px 18px; border-left: 5px solid #7c3aed; border-radius: 6px; background: #f5f3ff; }
+    .language-divider { margin: 3rem 0 0; border: 0; border-top: 1px solid #d1d5db; }
+    @media (max-width: 600px) {
+      body { padding: 12px; }
+      main { padding: 22px 18px; }
+      nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+      nav a { margin-right: 0; }
+      p, li, a { overflow-wrap: anywhere; }
     }
-    h1, h2 {
-      color: #111827;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
-    }
-    h2 {
-      font-size: 1.25rem;
-      margin-top: 1.75rem;
-    }
-    p {
-      margin: 0.5rem 0;
-    }
-    a {
-      color: #2563eb;
-    }
-    .meta {
-      color: #6b7280;
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5e7eb; background: #111827; }
+      main { background: #1f2937; }
+      h1, h2, h3 { color: #f9fafb; }
+      a { color: #c4b5fd; }
+      .meta { color: #9ca3af; }
+      .notice { background: #312e81; }
+      .language-divider { border-top-color: #4b5563; }
     }
   </style>
 </head>
 <body>
+<main>
   <h1>BandMayhem – Privacy Policy</h1>
-  <p class="meta">Effective date: 2025-11-20</p>
+  <p class="meta">Effective date: 3 September 2026 · Last updated: 3 September 2026</p>
+  <nav aria-label="Language selection">
+    <a href="#english">English</a>
+    <a href="#portugues">Português</a>
+    <a href="#account-deletion">Account deletion</a>
+  </nav>
 
-  <p>This Privacy Policy describes how EnragedTomatoStudios (“we”, “us”, or “our”) collects, uses, and shares information when you use the BandMayhem mobile application (the “App”).</p>
-  <p>By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+  <section id="english" lang="en">
+    <p>This Privacy Policy explains how EnragedTomatoStudios (“we”, “us” or “our”) processes information when you use the BandMayhem mobile game (the “App”). Privacy questions and requests can be sent to <a href="mailto:bandmayhem.app@gmail.com">bandmayhem.app@gmail.com</a>.</p>
 
-  <h2>1. Information We Collect</h2>
-  <p>We do not require you to create an account or provide your name, email address, or other direct personal identifiers in order to use the App.</p>
-  <p>However, we and our service providers may collect the following types of information:</p>
-  <p><strong>Usage Data</strong></p>
-  <ul>
-    <li>Facts viewed, favorites added or removed, shares initiated, and other in-app actions.</li>
-    <li>Frequency and duration of your use of the App.</li>
-    <li>Basic information about your device and operating system (for example, device model, OS version, language, country/region).</li>
-  </ul>
-  <p><strong>Advertising Data</strong></p>
-  <ul>
-    <li>Google AdMob may collect information such as your advertising ID, IP address, approximate location, device identifiers, and information about your interaction with ads (e.g. ad impressions, clicks).</li>
-  </ul>
-  <p><strong>Analytics Data</strong></p>
-  <ul>
-    <li>Firebase Analytics may collect event information about how you use the App (e.g. screens viewed, buttons tapped, ads watched).</li>
-    <li>This data is generally aggregated and used to understand app performance and usage patterns.</li>
-  </ul>
-  <p><strong>Notifications and Preferences</strong></p>
-  <ul>
-    <li>Your notification settings (whether notifications are enabled, preferred time for daily reminders).</li>
-    <li>Locally stored preferences such as your sharing message, theme, and other settings.</li>
-    <li>Some analytics events related to notifications (e.g. when notifications are scheduled or opened).</li>
-  </ul>
-  <p><strong>Local Storage</strong></p>
-  <ul>
-    <li>Favorites, notification settings, and some analytics backup data are stored on your device using local storage (AsyncStorage). This data is normally not shared directly with us and can be cleared by deleting the App or clearing the App’s data from your device settings.</li>
-  </ul>
+    <h2>1. Information processed by BandMayhem</h2>
+    <h3>Account and profile information</h3>
+    <p>The App creates an anonymous Firebase identifier so that online features can operate. You may optionally link that account using Google or Apple. When you do, the identity provider may supply an email address, provider identifier and display name. You may also choose a manager name or other in-game names.</p>
 
-  <h2>2. How We Use Your Information</h2>
-  <p>We use the information described above for the following purposes:</p>
-  <ul>
-    <li>To operate and provide the core features of the App (displaying facts, saving favorites, enabling sharing, sending notifications).</li>
-    <li>To show ads and measure ad performance (through Google AdMob).</li>
-    <li>To understand how the App is used and improve it over time (through Firebase Analytics and local analytics logs).</li>
-    <li>To fix bugs, monitor performance, and maintain the security and stability of the App.</li>
-    <li>To send daily reminders and other notifications if you enable them in the App.</li>
-  </ul>
+    <h3>Game progress and cloud data</h3>
+    <p>The App processes game progress and career information, which may include band and manager names, musicians, songs, albums, choices, scores, achievements, inventory, virtual balances, purchases, cloud saves, backups, generated album covers and generated band photos. Some progress and preferences are also stored locally on your device.</p>
 
-  <h2>3. Advertising and Analytics</h2>
-  <p>We use third-party services to serve ads and collect analytics:</p>
-  <p><strong>Google AdMob (Advertising)</strong></p>
-  <ul>
-    <li>Used to display banner and rewarded ads.</li>
-    <li>Google may use the collected data to personalize ads to you or to show non-personalized ads, depending on your device settings and applicable regulations.</li>
-    <li>For more information about how Google processes data for advertising, please see:
-      <br><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a>
-    </li>
-  </ul>
-  <p><strong>Firebase Analytics (Analytics)</strong></p>
-  <ul>
-    <li>Used to collect information about how you use the App (for example, which screens are most popular, how often users reach the daily fact limit, etc.).</li>
-    <li>This helps us improve features and overall user experience.</li>
-    <li>For more information, please see:
-      <br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>
-    </li>
-  </ul>
-  <p>Your device or operating system may allow you to limit ad tracking or reset your advertising ID. You can also manage your Google ad settings at:
-    <br><a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a>
-  </p>
+    <h3>Public and community features</h3>
+    <p>When an eligible season is completed, the App automatically submits selected career information to the public Hall of Fame. The results screen informs you when this submission is taking place. A Hall of Fame entry may include a band name, manager name, score, career statistics, songs, achievements and selected band or album images.</p>
+    <p>Publishing a Career Room is a separate action that you initiate. A published room may contain selected career memories, game text, equipment, images and engagement information. Anyone with the public link may view it. You can unpublish a Career Room from the App. Public features may also process reactions, visits and abuse-prevention identifiers. Do not use a real name or publish game content you do not want other people to see.</p>
 
-  <h2>4. Notifications</h2>
-  <p>The App uses push and local notifications to send daily reminders about new facts and other messages related to the App.</p>
-  <ul>
-    <li>You can enable or disable notifications and choose a preferred time for daily notifications within the App settings.</li>
-    <li>You can also control notifications at the system level through your device’s operating system settings.</li>
-    <li>We may collect basic analytics related to notifications (for example, when they are scheduled or opened) to improve timing and content.</li>
-  </ul>
+    <h3>AI-generated content</h3>
+    <p>BandMayhem uses OpenAI services to create certain game images and editorial content. Depending on the feature, OpenAI may process game context such as fictional band and member names, roles, genre, city, career events, text instructions and fictional character reference images. These features do not require you to provide a photograph of yourself. Generated results and related operational records may be stored in Firebase.</p>
 
-  <h2>5. Data Retention</h2>
-  <p>We retain information for as long as necessary to:</p>
-  <ul>
-    <li>Provide and maintain the App.</li>
-    <li>Analyze usage and improve the App.</li>
-    <li>Comply with legal obligations and enforce our rights.</li>
-  </ul>
-  <p>In practice:</p>
-  <ul>
-    <li>Local data such as favorites and preferences remain on your device until you remove the App or clear its data.</li>
-    <li>Analytics and ad data are retained according to the policies of Google (AdMob and Firebase).</li>
-  </ul>
+    <h3>Analytics and diagnostics</h3>
+    <p>Firebase Analytics processes app interactions such as sessions, screens, gameplay progress, purchases, advertising events and feature usage. Firebase Crashlytics processes crash logs, stack traces, app state, breadcrumbs, diagnostics, device/app information and developer-defined attributes. A Firebase user identifier may be associated with diagnostics so that related failures can be investigated. The App may also store limited client diagnostic records in Firebase.</p>
 
-  <h2>6. Data Sharing</h2>
-  <p>We may share information in the following situations:</p>
-  <ul>
-    <li><strong>Service Providers:</strong> We use Google (AdMob, Firebase) and other technical providers to deliver ads, analytics, and infrastructure services. These providers process data on our behalf and according to their own privacy policies.</li>
-    <li><strong>Legal Requirements:</strong> We may disclose information if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency).</li>
-    <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, user information may be transferred as part of that transaction, subject to this Privacy Policy.</li>
-  </ul>
-  <p>We do not sell your personal data to third parties.</p>
+    <h3>Advertising</h3>
+    <p>The App uses Google Mobile Ads for interstitial and rewarded advertising and currently requests non-personalized ads. Non-personalized ads are not selected using your previous activity, but Google may still process IP address, approximate location inferred from IP, app and ad interactions, diagnostic information, and device, app or advertising identifiers for ad delivery, frequency control, measurement, security and fraud prevention.</p>
 
-  <h2>7. Children’s Privacy</h2>
-  <p>The App is not intended for children under the age of 13 (or the minimum age required by applicable law in your region, such as 16 in some countries).</p>
-  <p>We do not knowingly collect personal information from children. If you believe that a child has provided us with personal information, please contact us using the details below, and we will take steps to delete such information.</p>
+    <h3>Purchases</h3>
+    <p>If you make an optional in-app purchase, the App processes the product, store, purchase time, entitlement or fulfilment status, price and currency where available, and a purchase token, transaction identifier or hashed transaction reference. This information is used to validate and deliver the purchase, restore eligible content, prevent duplicate redemption and investigate fraud. Apple or Google processes your payment details; we do not receive your full payment-card details.</p>
 
-  <h2>8. Security</h2>
-  <p>We take reasonable measures to protect the information processed through the App from unauthorized access, alteration, disclosure, or destruction.</p>
-  <p>However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+    <h3>Notifications, device permissions and technical data</h3>
+    <p>If you allow notifications, BandMayhem schedules career reminders and related messages. Notification preferences and schedules are primarily stored on the device, and notification interactions may be measured through analytics. The App may request access to save generated images to your photo library. Firebase, Google, Apple and our HTTPS services may process technical information such as IP address, user agent, installation or app identifier, device model, operating system and App version, language, country or region, network information and request timing.</p>
 
-  <h2>9. Your Rights and Choices</h2>
-  <p>Depending on your location, you may have certain rights regarding your personal data, such as:</p>
-  <ul>
-    <li>The right to access and obtain a copy of your personal data.</li>
-    <li>The right to request correction or deletion of your personal data.</li>
-    <li>The right to object to, or request restriction of, certain processing.</li>
-    <li>The right to withdraw consent where processing is based on consent.</li>
-  </ul>
-  <p>If you wish to exercise any of these rights, please contact us using the email below. We may ask you to provide additional information to verify your identity.</p>
-  <p>You can also control or limit certain data collection by:</p>
-  <ul>
-    <li>Adjusting your device’s privacy settings (e.g., reset advertising ID, limit ad tracking, disable personalized ads).</li>
-    <li>Disabling analytics or ad personalization in Google settings where available.</li>
-    <li>Managing notifications in both the App and your device settings.</li>
-    <li>Uninstalling the App, which removes locally stored data from your device.</li>
-  </ul>
+    <h2>2. Why we process information</h2>
+    <p>We process information to operate and synchronize the game; authenticate accounts; maintain cloud saves; provide leaderboards, public rooms and community features; create requested game content; validate and restore purchases; deliver reminders; measure and improve the App; diagnose faults; show and measure advertising; protect users, services and transactions; prevent abuse and fraud; and comply with legal obligations.</p>
+    <p>Depending on the information and your location, processing may be necessary to provide a feature you request, based on our legitimate interests in operating and securing the App, required by law, or based on consent. Where processing depends on a device permission or consent choice, you may decline or withdraw that choice, although the related optional feature may then be unavailable.</p>
 
-  <h2>10. International Transfers</h2>
-  <p>Your information may be processed and stored on servers located outside of your country or region, including countries that may have data protection laws different from those in your jurisdiction.</p>
-  <p>We take steps to ensure that appropriate safeguards are in place when information is transferred internationally, as required by applicable law.</p>
+    <h2>3. Service providers and sharing</h2>
+    <p>We do not sell personal information. We use the following service providers where needed to operate the App:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> Authentication, Firestore, Cloud Storage, Cloud Functions, Analytics, Crashlytics and Remote Config.</li>
+      <li><strong>Google Mobile Ads (AdMob):</strong> delivery, measurement, security and fraud prevention for advertising. Advertising-related data may be shared with Google and eligible advertising partners under the privacy choices and restrictions that apply to the request.</li>
+      <li><strong>OpenAI:</strong> generation and safety processing for certain fictional game images and editorial content.</li>
+      <li><strong>Google Play and Apple App Store:</strong> authentication where selected, purchase processing, validation and restoration.</li>
+    </ul>
+    <p>We use providers under their applicable data-protection and service terms and require information handled on our behalf to receive protection consistent with this policy and applicable law. We may also disclose information where required by law or where reasonably necessary to protect the rights, safety and integrity of BandMayhem, its users or others.</p>
 
-  <h2>11. Changes to This Privacy Policy</h2>
-  <p>We may update this Privacy Policy from time to time. When we do, we will revise the “Effective date” at the top of this page.</p>
-  <p>We encourage you to review this Privacy Policy periodically to stay informed about how we collect, use, and share information.</p>
+    <h2>4. Retention</h2>
+    <p>Local data remains on your device until removed by the App, by clearing App data or by uninstalling the App. Account, game and cloud data is retained while needed to provide the relevant feature and while the account or public content remains active. Operational records may be retained for a reasonable period based on security, abuse prevention, dispute resolution, backup, accounting and legal needs. Analytics, crash, advertising and AI-service information is retained according to the applicable service configuration and provider terms.</p>
+    <p>Public Hall of Fame data, image-generation records and stored generated media, client diagnostic records, entitlements, grants, security records, transaction references, aggregated information and provider-controlled analytics or advertising data may not be removed automatically by the in-App account-deletion action. We retain such information only for as long as reasonably necessary for its stated purpose or legal requirements. You may contact us to request review or removal of information associated with you. Information that has been aggregated or irreversibly de-identified may remain.</p>
 
-  <h2>12. Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
-  <p>
-    Email: <a href="mailto:bandmayhem.app@gmail.com">bandmayhem.app@gmail.com</a><br>
-    Subject: “BandMayhem – Privacy Policy”
-  </p>
+    <h2 id="account-deletion">5. Account and data deletion</h2>
+    <div class="notice">
+      <p><strong>Delete a linked account inside BandMayhem:</strong> open <strong>Settings → Privacy → Delete Account</strong> and confirm. The current in-App process deletes the Firebase Authentication account, the main player record, current cloud saves, save backups, account limits, achievement records, the public achievement profile and Career Rooms owned by the account, including their stored media.</p>
+      <p><strong>Request deletion without the App, or request removal of other associated information:</strong> email <a href="mailto:bandmayhem.app@gmail.com?subject=BandMayhem%20Account%20Deletion">bandmayhem.app@gmail.com</a> with the subject “BandMayhem Account Deletion”. If the account was linked, state whether you used Google or Apple and the email associated with it. Do not send passwords, purchase tokens or identity documents unless we specifically explain why verification is necessary.</p>
+    </div>
+    <p>Deletion is permanent and cannot restore cloud progress. Progress that exists only on the device is not uploaded by the deletion request and can be removed by clearing App data or uninstalling the App. We may ask for reasonable verification before processing an email request. We will respond within a reasonable period and explain if limited information must be retained for security, fraud prevention, accounting, legal obligations or because it has already been irreversibly de-identified.</p>
+
+    <h2>6. Your choices and rights</h2>
+    <p>You can play without linking Google or Apple, choose whether to publish a Career Room, unpublish a Career Room, decline optional photo-library or notification permissions, and use operating-system advertising and tracking controls. Device permissions can be changed in system settings. BandMayhem does not currently provide a general in-App switch for Firebase Analytics; you can contact us to object to processing associated with your account.</p>
+    <p>Depending on your location, you may have rights to access, correct, erase, restrict, object to or receive a portable copy of personal information, and to withdraw consent where consent is the basis for processing. You may also complain to your local data-protection authority. Send requests to <a href="mailto:bandmayhem.app@gmail.com">bandmayhem.app@gmail.com</a>. We may need reasonable information to verify that the request relates to you.</p>
+
+    <h2>7. Children</h2>
+    <p>BandMayhem is not directed to children below the minimum age required to consent to data processing in their country. If you believe a child has provided personal information improperly, contact us so that we can investigate and remove it where required.</p>
+
+    <h2>8. Security and international processing</h2>
+    <p>Information is transmitted using encrypted connections. We use reasonable technical and organizational safeguards, but no method of storage or transmission is completely secure. Our service providers may process information in countries other than your own, subject to their applicable contractual and legal safeguards.</p>
+
+    <h2>9. Changes and contact</h2>
+    <p>We may update this policy when BandMayhem or its services change. We will revise the effective date when material changes are published. Questions and privacy requests can be sent to <a href="mailto:bandmayhem.app@gmail.com">bandmayhem.app@gmail.com</a> with the subject “BandMayhem Privacy”.</p>
+  </section>
+
+  <hr class="language-divider">
+
+  <section id="portugues" lang="pt-PT">
+    <h1>BandMayhem – Política de Privacidade</h1>
+    <p class="meta">Data de entrada em vigor: 3 de setembro de 2026 · Última atualização: 3 de setembro de 2026</p>
+    <p>Esta Política de Privacidade explica como a EnragedTomatoStudios (“nós”) trata informação quando utilizas o jogo móvel BandMayhem (a “App”). Podes enviar dúvidas e pedidos de privacidade para <a href="mailto:bandmayhem.app@gmail.com">bandmayhem.app@gmail.com</a>.</p>
+
+    <h2>1. Informação tratada pelo BandMayhem</h2>
+    <h3>Conta e perfil</h3>
+    <p>A App cria um identificador Firebase anónimo para permitir o funcionamento das funcionalidades online. Podes opcionalmente associar essa conta ao Google ou à Apple. Nesse caso, o fornecedor de identidade poderá fornecer um endereço de email, identificador da conta e nome de apresentação. Também podes escolher um nome de manager e outros nomes utilizados dentro do jogo.</p>
+
+    <h3>Progresso e dados cloud</h3>
+    <p>A App trata progresso e informação da carreira, que pode incluir nomes da banda e do manager, músicos, canções, álbuns, escolhas, pontuações, conquistas, inventário, saldos virtuais, compras, gravações cloud, cópias de segurança, capas de álbuns geradas e fotografias fictícias da banda geradas. Parte do progresso e das preferências também fica guardada localmente no dispositivo.</p>
+
+    <h3>Funcionalidades públicas e de comunidade</h3>
+    <p>Quando uma época elegível termina, a App envia automaticamente informação selecionada da carreira para o Hall of Fame público. O ecrã de resultados informa quando esse envio está a decorrer. Uma entrada pode incluir nome da banda, nome do manager, pontuação, estatísticas da carreira, canções, conquistas e imagens selecionadas da banda ou de álbuns.</p>
+    <p>A publicação de uma Sala de Memórias é uma ação separada, iniciada por ti. Uma sala publicada pode incluir memórias selecionadas da carreira, texto do jogo, equipamento, imagens e informação de interação. Qualquer pessoa que tenha a ligação pública poderá vê-la. Podes retirar a Sala de Memórias da internet através da App. As funcionalidades públicas também podem tratar reações, visitas e identificadores destinados a prevenir abusos. Não uses um nome real nem publiques conteúdo do jogo que não queiras tornar visível a outras pessoas.</p>
+
+    <h3>Conteúdo gerado por IA</h3>
+    <p>O BandMayhem utiliza serviços da OpenAI para criar determinadas imagens e conteúdo editorial do jogo. Consoante a funcionalidade, a OpenAI pode tratar contexto do jogo, como nomes fictícios da banda e dos membros, funções, género musical, cidade, acontecimentos da carreira, instruções de texto e imagens de referência de personagens fictícias. Estas funcionalidades não exigem que forneças uma fotografia tua. Os resultados gerados e os registos operacionais relacionados podem ser guardados no Firebase.</p>
+
+    <h3>Análises e diagnóstico</h3>
+    <p>O Firebase Analytics trata interações com a App, como sessões, ecrãs, progresso, compras, eventos de publicidade e utilização de funcionalidades. O Firebase Crashlytics trata relatórios de falhas, stack traces, estado da App, breadcrumbs, diagnósticos, informação do dispositivo/App e atributos definidos pelo programador. Um identificador Firebase pode ser associado aos diagnósticos para permitir investigar falhas relacionadas. A App também pode guardar no Firebase alguns registos limitados de diagnóstico do cliente.</p>
+
+    <h3>Publicidade</h3>
+    <p>A App utiliza Google Mobile Ads para publicidade intersticial e recompensada e atualmente solicita anúncios não personalizados. Esses anúncios não são escolhidos com base na tua atividade anterior, mas a Google pode continuar a tratar endereço IP, localização aproximada inferida do IP, interações com a App e os anúncios, diagnósticos e identificadores do dispositivo, da App ou de publicidade para apresentar anúncios, controlar frequência, medir resultados, garantir segurança e prevenir fraude.</p>
+
+    <h3>Compras</h3>
+    <p>Se fizeres uma compra opcional dentro da App, são tratados o produto, loja, momento da compra, estado da entrega ou entitlement, preço e moeda quando disponíveis, e um token de compra, identificador da transação ou referência hash. Esta informação é usada para validar e entregar a compra, restaurar conteúdo elegível, impedir utilizações duplicadas e investigar fraude. A Apple ou a Google trata os dados de pagamento; nós não recebemos os dados completos do teu cartão.</p>
+
+    <h3>Notificações, permissões e dados técnicos</h3>
+    <p>Se autorizares notificações, o BandMayhem agenda lembretes da carreira e mensagens relacionadas. As preferências e os agendamentos ficam principalmente no dispositivo, e as interações com notificações podem ser medidas através de analytics. A App pode pedir acesso para guardar imagens geradas na biblioteca de fotografias. O Firebase, Google, Apple e os nossos serviços HTTPS podem tratar informação técnica, como endereço IP, user agent, identificador da instalação ou App, modelo do dispositivo, sistema operativo e versão da App, idioma, país ou região, informação de rede e momento dos pedidos.</p>
+
+    <h2>2. Finalidades</h2>
+    <p>Tratamos informação para operar e sincronizar o jogo; autenticar contas; manter gravações cloud; disponibilizar rankings, salas públicas e funcionalidades de comunidade; criar conteúdo solicitado; validar e restaurar compras; apresentar lembretes; medir e melhorar a App; diagnosticar problemas; apresentar e medir publicidade; proteger utilizadores, serviços e transações; prevenir abusos e fraude; e cumprir obrigações legais.</p>
+    <p>Consoante a informação e a tua localização, o tratamento pode ser necessário para disponibilizar uma funcionalidade que solicitas, basear-se no nosso interesse legítimo em operar e proteger a App, ser exigido por lei ou basear-se no consentimento. Quando o tratamento depender de uma permissão do dispositivo ou escolha de consentimento, podes recusar ou retirar essa escolha, embora a funcionalidade opcional associada possa deixar de estar disponível.</p>
+
+    <h2>3. Prestadores de serviços e partilha</h2>
+    <p>Não vendemos informação pessoal. Utilizamos os seguintes prestadores quando necessário:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> Authentication, Firestore, Cloud Storage, Cloud Functions, Analytics, Crashlytics e Remote Config.</li>
+      <li><strong>Google Mobile Ads (AdMob):</strong> apresentação, medição, segurança e prevenção de fraude na publicidade. Dados relacionados com publicidade podem ser partilhados com a Google e parceiros publicitários elegíveis, de acordo com as escolhas e restrições aplicáveis ao pedido.</li>
+      <li><strong>OpenAI:</strong> geração e verificação de segurança de determinadas imagens fictícias e conteúdo editorial do jogo.</li>
+      <li><strong>Google Play e Apple App Store:</strong> autenticação quando escolhida, processamento, validação e restauro de compras.</li>
+    </ul>
+    <p>Utilizamos estes prestadores ao abrigo dos respetivos termos de serviço e proteção de dados e exigimos que a informação tratada em nosso nome receba proteção consistente com esta política e com a legislação aplicável. Também podemos divulgar informação quando exigido por lei ou quando razoavelmente necessário para proteger os direitos, segurança e integridade do BandMayhem, dos seus utilizadores ou de terceiros.</p>
+
+    <h2>4. Conservação</h2>
+    <p>Os dados locais permanecem no dispositivo até serem removidos pela App, através da limpeza dos dados da App ou da sua desinstalação. Os dados da conta, jogo e cloud são conservados enquanto forem necessários para disponibilizar a funcionalidade relevante e enquanto a conta ou conteúdo público permanecer ativo. Registos operacionais podem ser conservados durante um período razoável em função de necessidades de segurança, prevenção de abuso, resolução de litígios, cópias de segurança, contabilidade e obrigações legais. A conservação de informação de analytics, falhas, publicidade e serviços de IA segue a configuração e os termos aplicáveis de cada prestador.</p>
+    <p>Dados públicos do Hall of Fame, registos de geração de imagens e conteúdo gerado guardado, diagnósticos do cliente, entitlements, grants, registos de segurança, referências de transações, informação agregada e dados de analytics ou publicidade controlados pelos prestadores podem não ser removidos automaticamente pela ação de eliminação dentro da App. Conservamos essa informação apenas durante o tempo razoavelmente necessário para a finalidade indicada ou para cumprir obrigações legais. Podes contactar-nos para pedir a revisão ou remoção de informação associada a ti. Informação agregada ou irreversivelmente desidentificada poderá permanecer.</p>
+
+    <h2 id="eliminacao-de-conta">5. Eliminação da conta e dos dados</h2>
+    <div class="notice">
+      <p><strong>Eliminar uma conta associada dentro do BandMayhem:</strong> abre <strong>Definições → Privacidade → Eliminar conta</strong> e confirma. O processo atual elimina a conta Firebase Authentication, o registo principal do jogador, as gravações cloud atuais, cópias de segurança das gravações, limites da conta, registos de conquistas, o perfil público de conquistas e as Salas de Memórias pertencentes à conta, incluindo os respetivos ficheiros guardados.</p>
+      <p><strong>Pedir a eliminação sem a App ou pedir a remoção de outra informação associada:</strong> envia um email para <a href="mailto:bandmayhem.app@gmail.com?subject=BandMayhem%20Account%20Deletion">bandmayhem.app@gmail.com</a> com o assunto “BandMayhem Account Deletion”. Se a conta estava associada, indica se utilizaste Google ou Apple e o respetivo email. Não envies palavras-passe, tokens de compra ou documentos de identificação, exceto se explicarmos especificamente por que motivo é necessária uma verificação.</p>
+    </div>
+    <p>A eliminação é permanente e não permite recuperar o progresso cloud. O progresso existente apenas no dispositivo não é enviado pelo pedido de eliminação e pode ser removido limpando os dados ou desinstalando a App. Poderemos solicitar uma verificação razoável antes de processar um pedido por email. Responderemos num prazo razoável e explicaremos se for necessário conservar informação limitada por motivos de segurança, prevenção de fraude, contabilidade, obrigações legais ou por já ter sido irreversivelmente desidentificada.</p>
+
+    <h2>6. Escolhas e direitos</h2>
+    <p>Podes jogar sem associar Google ou Apple, escolher se publicas uma Sala de Memórias, retirar uma sala da internet, recusar permissões opcionais de fotografias ou notificações e utilizar os controlos de publicidade e tracking do sistema operativo. As permissões podem ser alteradas nas definições do dispositivo. O BandMayhem não disponibiliza atualmente um interruptor geral dentro da App para o Firebase Analytics; podes contactar-nos para te opores ao tratamento associado à tua conta.</p>
+    <p>Consoante a tua localização, podes ter direito a aceder, corrigir, eliminar, limitar, opor-te ao tratamento ou receber uma cópia portável da informação pessoal, e a retirar o consentimento quando este for o fundamento do tratamento. Também podes reclamar junto da autoridade de proteção de dados local. Envia pedidos para <a href="mailto:bandmayhem.app@gmail.com">bandmayhem.app@gmail.com</a>. Poderemos precisar de informação razoável para confirmar que o pedido está relacionado contigo.</p>
+
+    <h2>7. Crianças</h2>
+    <p>O BandMayhem não é dirigido a crianças abaixo da idade mínima necessária para consentirem no tratamento de dados no respetivo país. Se acreditares que uma criança forneceu informação pessoal indevidamente, contacta-nos para podermos investigar e remover essa informação quando exigido.</p>
+
+    <h2>8. Segurança e tratamento internacional</h2>
+    <p>A informação é transmitida através de ligações encriptadas. Aplicamos medidas técnicas e organizativas razoáveis, mas nenhum método de armazenamento ou transmissão é totalmente seguro. Os nossos prestadores podem tratar informação em países diferentes do teu, ao abrigo das respetivas salvaguardas contratuais e legais aplicáveis.</p>
+
+    <h2>9. Alterações e contacto</h2>
+    <p>Podemos atualizar esta política quando o BandMayhem ou os seus serviços mudarem. A data de entrada em vigor será atualizada quando forem publicadas alterações materiais. Podes enviar dúvidas e pedidos de privacidade para <a href="mailto:bandmayhem.app@gmail.com">bandmayhem.app@gmail.com</a> com o assunto “BandMayhem Privacy”.</p>
+  </section>
+</main>
 </body>
 </html>
